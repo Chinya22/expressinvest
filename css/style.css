@@ -91,12 +91,15 @@ html {
     align-items     : center;
     justify-content : center;
     margin-right    : 20px;
+    transition: 0.5s;
 }
 
 .header_social_btn:last-child {
     margin-right: 30px;
 }
-
+.header_social_btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
 .header_button {
     color          : #1FA8AD;
     width          : 175px;
@@ -107,6 +110,12 @@ html {
     display        : flex;
     align-items    : center;
     justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header_button:hover {
+    background-color: #c7c7c7;
+    color: #093b3d;
 }
 
 .firstScreen {
