@@ -375,3 +375,119 @@ body {
 .thirdScreen_container_graf_img {
     width: 415px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    width           : 100%;
+    background-color: #1FA8AD;
+
+}
+
+.footer .wrapper {
+    flex-direction : column;
+    height         : 100%;
+    justify-content: center;
+    padding        : 70px 0 32px 0;
+}
+
+.logo {
+    width       : 200px;
+    margin-right: 30px;
+}
+
+.footer_nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-right   : 30px;
+}
+
+.footer_nav_item {
+    margin-right   : 30px;
+    text-decoration: none;
+    color          : #fff;
+    font-weight    : 400;
+    font-size      : 18px;
+}
+
+.footer_nav_item:last-child {
+    margin-right: 0;
+}
+
+.footer_social {
+    display: flex;
+}
+
+.footer_social_btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius   : 50%;
+    width           : 48px;
+    height          : 48px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin-right    : 20px;
+    transition      : 0.5s;
+}
+
+.footer_social_btn:last-child {
+    margin-right: 30px;
+}
+
+.footer_social_btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.footer_button {
+    color          : #1FA8AD;
+    width          : 175px;
+    font-size      : 13px;
+    font-weight    : 700;
+    line-height    : 10px;
+    text-transform : uppercase;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    cursor         : pointer;
+    transition     : 0.5s;
+}
+
+.footer_button:hover {
+    background-color: #c7c7c7;
+    color           : #093b3d;
+}
+
+.footer_firstLine {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 100%;
+    margin-bottom  : 70px;
+}
+
+.footer_secondLine {
+    border     : none;
+    border-top : 1px solid #fff;
+    text-align : center;
+    color      : #fff;
+    opacity    : 0.5;
+    font-size  : 13px;
+    padding-top: 30px;
+}
