@@ -376,9 +376,101 @@ body {
     width: 415px;
 }
 
+.fourthScreen {}
 
+.fourthScreen .wrapper {
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
 
+.fourthScreen_title {
+    font-size    : 56px;
+    font-weight  : 800;
+    margin-bottom: 80px;
+}
 
+.fourthScreen_cardWrapper {
+    display        : flex;
+    justify-content: space-between;
+    width          : 100%;
+    margin-bottom  : 60px;
+}
+
+.fourthScreen_cardWrapper_item {
+    display         : flex;
+    flex-direction  : column;
+    width           : 415px;
+    height          : 535px;
+    padding         : 40px;
+    background-color: #fff;
+    box-shadow      : #bdbdbd 5px 5px 10px;
+    cursor          : pointer;
+}
+
+.fourthScreen_cardWrapper_item_logo {
+    width        : 160px;
+    height       : 90px;
+    margin-bottom: 35px;
+}
+
+.fourthScreen_cardWrapper_item_title {
+    font-size    : 21px;
+    font-weight  : 700;
+    margin-bottom: 25px;
+}
+
+.fourthScreen_cardWrapper_item_text {
+    font-size    : 15px;
+    opacity      : 0.75;
+    margin-bottom: 30px;
+    flex-grow    : 1;
+}
+
+.fourthScreen_cardWrapper_item_name {
+    font-size     : 13px;
+    font-weight   : 700;
+    text-transform: uppercase;
+    margin-bottom : 10px;
+}
+
+.fourthScreen_cardWrapper_item_post {
+    font-size: 15px;
+    opacity  : 0.5;
+}
+
+.fourthScreen_controls {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 210px;
+    height         : 40px;
+}
+
+.fourthScreen_controls_arrow {
+    width           : 40px;
+    height          : 40px;
+    background-color: #1FA8AD;
+    opacity         : 0.5;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    transform       : rotate(180deg);
+    cursor          : pointer;
+
+}
+
+.fourthScreen_controls_numbers {
+    font-size      : 18px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.next {
+    opacity  : 1;
+    transform: rotate(0deg);
+}
 
 
 
@@ -402,9 +494,8 @@ body {
 
 .footer .wrapper {
     flex-direction : column;
-    height         : 100%;
     justify-content: center;
-    padding        : 70px 0 32px 0;
+    padding        : 70px 0 30px 0;
 }
 
 .logo {
@@ -458,6 +549,7 @@ body {
 .footer_button {
     color          : #1FA8AD;
     width          : 175px;
+    height         : 40px;
     font-size      : 13px;
     font-weight    : 700;
     line-height    : 10px;
