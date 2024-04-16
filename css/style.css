@@ -384,11 +384,11 @@ body {
     align-items    : center;
 }
 
-.fourthScreen_title {
+/* .fourthScreen_title {
     font-size    : 56px;
     font-weight  : 800;
     margin-bottom: 80px;
-}
+} */
 
 .fourthScreen_cardWrapper {
     display        : flex;
@@ -470,6 +470,68 @@ body {
 .next {
     opacity  : 1;
     transform: rotate(0deg);
+}
+
+.fifthScreen {
+    margin-bottom: 160px;
+}
+
+.fifthScreen .wrapper {
+    justify-content: center;
+    align-items    : center;
+}
+
+.fifthScreen_title {
+    margin-right: 135px;
+}
+
+.accentHighlight {
+    color: #1FA8AD;
+}
+
+.fifthScreen_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 526px;
+    height: 585px;
+    background: #fff;
+    padding: 50px 60px;
+    box-shadow      : #bdbdbd 5px 5px 10px;
+}
+
+.fifthScreen_form_title {
+    width: 405px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fifthScreen_form_input {
+    width: 405px;
+    height: 60px;
+    padding: 20px 25px;
+}
+.fifthScreen_form_label {
+   color: #1FA8AD; 
+   text-align: left;
+   width: 100%;
+}
+.fifthScreen_form_checkbox {
+    margin-right: 15px;
+}
+.fifthScreen_form_btn {
+    background-color: #1FA8AD;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fifthScreen_form_btn:hover {
+    background-color: #f0f0f0;
+    color: #1FA8AD;
 }
 
 
