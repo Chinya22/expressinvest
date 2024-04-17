@@ -64,6 +64,11 @@ body {
     width           : 100%;
     height          : 100px;
     background-color: #1FA8AD;
+
+}
+
+.header .wrapper {
+    position: relative;
 }
 
 .logo {
@@ -490,48 +495,52 @@ body {
 }
 
 .fifthScreen_form {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: space-between;
-    align-items: center;
-    width: 526px;
-    height: 585px;
-    background: #fff;
-    padding: 50px 60px;
-    box-shadow      : #bdbdbd 5px 5px 10px;
+    align-items    : center;
+    width          : 526px;
+    height         : 585px;
+    background     : #fff;
+    padding        : 50px 60px;
+    box-shadow     : #bdbdbd 5px 5px 10px;
 }
 
 .fifthScreen_form_title {
-    width: 405px;
-    text-align: center;
-    font-size: 32px;
+    width      : 405px;
+    text-align : center;
+    font-size  : 32px;
     font-weight: 700;
 }
 
 .fifthScreen_form_input {
-    width: 405px;
-    height: 60px;
+    width  : 405px;
+    height : 60px;
     padding: 20px 25px;
 }
+
 .fifthScreen_form_label {
-   color: #1FA8AD; 
-   text-align: left;
-   width: 100%;
+    color     : #1FA8AD;
+    text-align: left;
+    width     : 100%;
 }
+
 .fifthScreen_form_checkbox {
     margin-right: 15px;
 }
+
 .fifthScreen_form_btn {
     background-color: #1FA8AD;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 20px 40px;
-    cursor: pointer;
-    transition: 0.5s;
+    color           : #fff;
+    text-transform  : uppercase;
+    padding         : 20px 40px;
+    cursor          : pointer;
+    transition      : 0.5s;
 }
+
 .fifthScreen_form_btn:hover {
     background-color: #f0f0f0;
-    color: #1FA8AD;
+    color           : #1FA8AD;
 }
 
 
@@ -644,4 +653,63 @@ body {
     opacity    : 0.5;
     font-size  : 13px;
     padding-top: 30px;
+}
+
+.mobile_nav {
+    position: absolute;
+    top     : 0;
+    right   : 0;
+}
+
+.burger_btn {
+    display         : inline-block;
+    /* content      : ''; */
+    width           : 40px;
+    height          : 40px;
+    background-image: url(../img/burger.svg);
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked~.burger_nav {
+    display: flex;
+}
+
+.burger_nav {
+    position        : absolute;
+    top             : 50px;
+    right           : 0;
+    display         : none;
+    flex-direction  : column;
+    background-color: #093b3d;
+    width           : 270px;
+}
+
+.burger_nav .header_nav {
+    flex-direction: column;
+    align-items   : start;
+    margin        : 0 0 10px 0;
+}
+
+.burger_nav .header_nav .header_nav_item {
+    padding      : 10px;
+    border       : none;
+    border-bottom: 1px solid #fff;
+    width        : 100%;
+    margin       : 0;
+}
+
+.burger_nav .header_social {
+    padding: 0 10px 10px 10px;
+    margin : 0 auto;
+}
+
+.burger_nav .header_social .header_social_btn:last-child {
+    margin: 0;
+}
+
+.burger_nav .header_button {
+    margin: 10px auto;
 }
