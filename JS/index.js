@@ -52,25 +52,53 @@ createCards(cardsInfo, cardsWrapper);
 //   createCards (cardsInfo, cardsWrapper);
 // })
 
-const btnModal = document.querySelector('.header_button');
-const modal1 = document.querySelector('.modal');
-const modalCLose = document.querySelector('.modal_close');
+const btnModal = document.querySelector(".header_button");
+const modal1 = document.querySelector(".modal");
+const modalCLose = document.querySelector(".modal_close");
 
-btnModal.addEventListener('click', () => {
-  modal1.classList.add('modal_active');
+btnModal.addEventListener("click", () => {
+  modal1.classList.add("modal_active");
 
-  modalCLose.addEventListener('click', closeModalFn);
+  modalCLose.addEventListener("click", closeModalFn);
 
-  modal1.addEventListener('click', hideModal);
+  modal1.addEventListener("click", hideModal);
 
   function closeModalFn() {
-    modal1.classList.remove('modal_active');
-    modalCLose.removeEventListener('click', closeModalFn);
-    modal1.removeEventListener('click', hideModal);
+    modal1.classList.remove("modal_active");
+    modalCLose.removeEventListener("click", closeModalFn);
+    modal1.removeEventListener("click", hideModal);
   }
   function hideModal(event) {
     if (event.target === modal1) {
       closeModalFn();
     }
   }
-})
+});
+
+const tabs = document.querySelectorAll(".secondScreen_buttonWrapper_item");
+const tabsContent = document.querySelectorAll(".tab_content_item");
+
+tabs.forEach((tab, index) => {
+  tab.onclick = () => {
+    changeTab(index);
+  };
+});
+function changeTab(index) {
+  // for (let tab of tabs) {
+  //   tab.classList.remove('active');
+  // }
+  // tabs[index].classList.add('active');
+
+  // for (let el of tabsContent) {
+  //   el.classList.remove('active');
+  // }
+  // tabsContent[index].classList.add('active');
+
+  for (let i=0; i<tabs.length; i++) {
+    tabs[i].classList.remove('active');
+    tabsContent[i].classList.remove('active');
+  }
+  tabs[index].classList.add('active');
+  tabsContent[index].classList.add('active');
+}
+

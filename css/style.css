@@ -287,7 +287,8 @@ body {
   transition: 0.5s;
 }
 
-.secondScreen_buttonWrapper_item:hover {
+.secondScreen_buttonWrapper_item:hover,
+.secondScreen_buttonWrapper_item.active {
   background-color: #1fa8ad;
   color: #fff;
 }
@@ -718,6 +719,19 @@ body {
   padding: 20px;
   margin: 20px auto;
 }
+.tabs_content {
+  width: 850px;
+  text-align: left;
+  
+  /* opacity: 0; */
+}
+.tab_content_item {
+  display: none;
+}
+.tab_content_item.active {
+  display: block;
+}
+
 @media screen and (max-width: 1300px) {
   .wrapper {
     padding: 0 20px;
